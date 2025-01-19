@@ -1,0 +1,37 @@
+#ifndef _VIRUS_
+#define _VIRUS_
+
+#include<string>
+using std::string;
+
+namespace virus{
+
+class Infect {
+    private:
+        string payload;
+    public:
+        Infect(string pl)
+            :payload(pl)
+            {}
+};
+
+class Protect {
+
+};
+
+class Spread {
+
+};
+
+class Virus {
+    private:
+        Infect *infect;
+        Protect *protect;
+        Spread *spread;
+    public:
+        Virus(){}
+};
+
+}
+
+#endif
